@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Hockey’s All Hero</title>
 
     <!-- Google Font Manrope -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -17,11 +17,58 @@
     <!-- Font Awesome -->
     <script src="https://kit.fontawesome.com/01e9fef8b8.js" crossorigin="anonymous"></script>
 
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+                colors: {
+                    'primary-color': '#FF4240',
+                    'secondary-color': '#131318',
+                    'content-color': '#424247',
+                },
+                fontFamily: {
+                    'primary-font': ['"Manrope"', "sans-serif"],
+                },
+            }
+          }
+        }
+      </script>
 </head>
 <body>
     <header>
-        <nav>
-            
+        <nav class="container max-w-[1170px] mx-auto mt-6 lg:mt-12">
+            <div class="navbar">
+                <div class="navbar-start">
+                  <div class="dropdown">
+                    <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                      <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
+                    </div>
+                    <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow rounded-box w-52">
+                        <li><a>Home</a></li>
+                        <li><a>About</a></li>
+                        <li><a>Pages</a></li>
+                        <li><a>Blog</a></li>
+                        <li><a>Contact</a></li>
+                        <li><a href="" class="text-[#89898B] text-xl"><i class="fa-solid fa-magnifying-glass"></i></li>
+                    </ul>
+                  </div>
+                  <a href="" class="font-primary-font text-xl lg:text-4xl font-extrabold cursor-pointer">Hockey<span class="text-primary-color">’</span>s</a>
+                </div>
+                <div class="navbar-center hidden lg:flex">
+                    <ul class="menu menu-horizontal gap-6 font-primary-font text-base">
+                        <li><a class="hover:text-primary-color hover:font-bold">Home</a></li>
+                        <li><a class="hover:text-primary-color hover:font-bold">About</a></li>
+                        <li><a class="hover:text-primary-color hover:font-bold">Pages</a></li>
+                        <li><a class="hover:text-primary-color hover:font-bold">Blog</a></li>
+                        <li><a class="hover:text-primary-color hover:font-bold">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="navbar-end">
+                    <div class="flex gap-6 items-center font-primary-font">
+                        <a href="" class="text-[#89898B] text-xl hidden lg:inline-block"><i class="fa-solid fa-magnifying-glass"></i></a> <a class="btn font-bold text-white text-lg lg:text-xl px-4 lg:px-6 py-2 lg:py-4 h-auto bg-primary-color rounded-lg hover:bg-secondary-color hover:text-primary-color transition-all duration-300">Get Ticket</a>
+                    </div>
+                </div>
+            </div>
         </nav>
     </header>
 </body>
